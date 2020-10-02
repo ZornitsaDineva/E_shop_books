@@ -13,14 +13,5 @@ namespace E_shop_books
 
     public partial class _Default
     {
-
-        /// <summary>
-        /// productDetail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView productDetail;
     }
 }

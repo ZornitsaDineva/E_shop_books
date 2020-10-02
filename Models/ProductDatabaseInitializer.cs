@@ -50,8 +50,7 @@ namespace E_shop_books.Models
                 {
                     ProductID = 1,
                     ProductName = "Програмиране",
-                    Description = "Програмирането е наука, която се занимава с методите и средствата за създаване на компютърни програми." +
-                                  "Power it up and let it go!",
+                    Description = "Програмирането е наука, която се занимава с методите и средствата за създаване на компютърни програми.",
                     ImagePath="image1.jpg",
                     UnitPrice = 22.50,
                     CategoryID = 1
@@ -87,8 +86,8 @@ namespace E_shop_books.Models
                 {
                     ProductID = 5,
                     ProductName = "Връзки с обществеността",
-                    Description = "Връзки с обществеността е дейност по управление на информацията, свързана с публичния имидж на известни, публични личности, организации и програми." +
-                                  "No batteries required.",
+                    Description = "Връзки с обществеността е дейност по управление на информацията, свързана с публичния имидж на известни, публични личности, организации и програми.",
+                                 
                     ImagePath="image5.jpg",
                     UnitPrice = 34.95,
                     CategoryID = 3
@@ -152,7 +151,7 @@ namespace E_shop_books.Models
                     ProductID = 12,
                     ProductName = "Приложна екология",
                     Description = "Приложната екология се занимава с прилагането на екологичните знания на практика, за справяне с екологичните проблеми.",
-                    ImagePath="truckbig.png",
+                    ImagePath="image12.jpg",
                     UnitPrice = 29.00,
                     CategoryID = 4
                 },
@@ -160,9 +159,8 @@ namespace E_shop_books.Models
                 {
                     ProductID = 13,
                     ProductName = "Социална екология",
-                    Description = "Социалната екология е основен раздел на екологията, както и подраздел на екоикономиката." +
-                                  "artifically intelligent computer brain!",
-                    ImagePath="boatbig.png",
+                    Description = "Социалната екология е основен раздел на екологията, както и подраздел на екоикономиката.",
+                    ImagePath="image13.jpg",
                     UnitPrice = 95.00,
                     CategoryID = 4
                 },
