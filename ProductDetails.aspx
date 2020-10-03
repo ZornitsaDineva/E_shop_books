@@ -22,8 +22,7 @@
                                             <b>Add To Cart<b>
                                         </span>           
                                     </a>
-                        <span><b>Product Number:</b>&nbsp;<%#:Item.ProductID %></span>
-                        <br />
+                         <br />
                     </td>
                 </tr>
             </table>
