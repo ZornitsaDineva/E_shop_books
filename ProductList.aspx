@@ -42,7 +42,7 @@
                                         </span>
                                     </a>
                                     <br />
-                                    <span class="ProductName">
+                                    <span>
                                         <b>Price: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
                                     </span>
                                     <br />
