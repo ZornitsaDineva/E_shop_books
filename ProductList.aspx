@@ -12,7 +12,7 @@
                 <EmptyDataTemplate>
                     <table >
                         <tr>
-                            <td>No data was returned.</td>
+                            <td>Няма данни.</td>
                         </tr>
                     </table>
                 </EmptyDataTemplate>
@@ -43,12 +43,12 @@
                                     </a>
                                     <br />
                                     <span>
-                                        <b>Price: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
+                                        <b>Цена: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
                                     </span>
                                     <br />
                                     <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %>">               
                                         <span class="ProductListItem">
-                                            <b>Add To Cart<b>
+                                            <b>Добави в кошницата<b>
                                         </span>           
                                     </a>
                                 </td>
