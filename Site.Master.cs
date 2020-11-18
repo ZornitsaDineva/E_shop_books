@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using System.Linq;
 using E_shop_books.Models;
+using E_shop_books.Logic;
 
 namespace E_shop_books
 {
@@ -73,6 +74,17 @@ namespace E_shop_books
         {
 
         }
+
+        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+            {
+                string cartStr = string.Format("Cart ({0})", usersShoppingCart.GetCount());
+                cartCount.InnerText = cartStr;
+            }
+        }
+
+
         public IQueryable<Category> GetCategories()
         {
             var _db = new E_shop_books.Models.ProductContext();
