@@ -38,6 +38,10 @@ namespace E_shop_books.Account
                 switch (result)
                 {
                     case SignInStatus.Success:
+                        E_shop_books.Logic.ShoppingCartActions usersShoppingCart = new E_shop_books.Logic.ShoppingCartActions();
+                        String cartId = usersShoppingCart.GetCartId();
+                        usersShoppingCart.MigrateCart(cartId, Email.Text);
+
                         IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
                         break;
                     case SignInStatus.LockedOut:

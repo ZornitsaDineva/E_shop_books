@@ -59,11 +59,11 @@ namespace E_shop_books
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+              ClientId = "473760202119-5hsbb2uum3fdvn3c3jj4khk9mqepubdf.apps.googleusercontent.com",
+              ClientSecret = "OnHZ70R1UHzlVOdWthLIIdV5"
+            });
         }
     }
 }
