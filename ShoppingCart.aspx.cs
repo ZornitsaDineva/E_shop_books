@@ -32,6 +32,7 @@ namespace E_shop_books
                     lblTotal.Text = "";
                     ShoppingCartTitle.InnerText = "Shopping Cart is Empty";
                     UpdateBtn.Visible = false;
+                    CheckoutImageBtn.Visible = false;
                 }
             }
         }
@@ -87,6 +88,15 @@ namespace E_shop_books
         protected void UpdateBtn_Click(object sender, EventArgs e)
         {
             UpdateCartItems();
+        }
+
+        protected void CheckoutBtn_Click(object sender, ImageClickEventArgs e)
+        {
+            using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+            {
+                Session["payment_amt"] = usersShoppingCart.GetTotal();
+            }
+            Response.Redirect("Checkout/CheckoutStart.aspx");
         }
     }
 
