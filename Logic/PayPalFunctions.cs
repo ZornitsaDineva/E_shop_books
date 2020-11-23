@@ -147,7 +147,7 @@ public class NVPAPICaller
         encoder["TOKEN"] = token;
         encoder["PAYERID"] = PayerID;
         encoder["PAYMENTREQUEST_0_AMT"] = finalPaymentAmount;
-        encoder["PAYMENTREQUEST_0_CURRENCYCODE"] = "USD";
+        encoder["PAYMENTREQUEST_0_CURRENCYCODE"] = "EUR";
         encoder["PAYMENTREQUEST_0_PAYMENTACTION"] = "Sale";
 
         string pStrrequestforNvp = encoder.Encode();

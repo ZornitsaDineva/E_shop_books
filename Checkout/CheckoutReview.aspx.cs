@@ -10,6 +10,7 @@ namespace E_shop_books.Checkout
 {
     public partial class CheckoutReview : System.Web.UI.Page
     {
+      
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
