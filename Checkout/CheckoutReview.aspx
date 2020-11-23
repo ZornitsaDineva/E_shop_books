@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckoutReview.aspx.cs" Inherits="E_shop_books.Checkout.CheckoutReview" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckoutReview.aspx.cs" Inherits="WingtipToys.Checkout.CheckoutReview" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Order Review</h1>
     <p></p>
@@ -11,7 +11,7 @@
             <asp:BoundField DataField="Quantity" HeaderText="Quantity" />        
         </Columns>    
     </asp:GridView>
-    <asp:DetailsView ID="ShipInfo" runat="server" AutoGenerateRows="false" GridLines="None" CellPadding="10" BorderStyle="None" CommandRowStyle-BorderStyle="None" OnPageIndexChanging="ShipInfo_PageIndexChanging">
+    <asp:DetailsView ID="ShipInfo" runat="server" AutoGenerateRows="false" GridLines="None" CellPadding="10" BorderStyle="None" CommandRowStyle-BorderStyle="None">
         <Fields>
         <asp:TemplateField>
             <ItemTemplate>
@@ -32,9 +32,9 @@
             </ItemTemplate>
             <ItemStyle HorizontalAlign="Left" />
         </asp:TemplateField>
-        </Fields>
+          </Fields>
     </asp:DetailsView>
     <p></p>
     <hr />
     <asp:Button ID="CheckoutConfirm" runat="server" Text="Complete Order" OnClick="CheckoutConfirm_Click" />
- </asp:Content>
+</asp:Content>

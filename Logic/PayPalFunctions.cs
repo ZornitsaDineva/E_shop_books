@@ -64,7 +64,7 @@ public class NVPAPICaller
         encoder["PAYMENTREQUEST_0_AMT"] = amt;
         encoder["PAYMENTREQUEST_0_ITEMAMT"] = amt;
         encoder["PAYMENTREQUEST_0_PAYMENTACTION"] = "Sale";
-        encoder["PAYMENTREQUEST_0_CURRENCYCODE"] = "USD";
+        encoder["PAYMENTREQUEST_0_CURRENCYCODE"] = "EUR";
 
         // Get the Shopping Cart Products
         using (E_shop_books.Logic.ShoppingCartActions myCartOrders = new E_shop_books.Logic.ShoppingCartActions())
