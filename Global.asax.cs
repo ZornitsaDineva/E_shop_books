@@ -22,7 +22,7 @@ namespace E_shop_books
 
             // Initialize the product database.
             Database.SetInitializer(new ProductDatabaseInitializer());
-            
+
             // Create the custom role and user.
             RoleActions roleActions = new RoleActions();
             roleActions.AddUserAndRole();
@@ -44,8 +44,23 @@ namespace E_shop_books
                 "Product/{productName}",
                 "~/ProductDetails.aspx"
             );
-        } 
+        }
 
+        void Application_Error(object sender, EventArgs e)
+        {
+            Exception exc = Server.GetLastError();
 
+            if (exc is HttpUnhandledException)
+            {
+                if (exc.InnerException != null)
+                {
+
+                    exc = new Exception(exc.InnerException.Message);
+                    // Pass the error on to the error page.
+                    Server.Transfer("ErrorPage.aspx?handler=Application_Error%20-%20Global.asax", true);
+                }
+            }
+
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace E_shop_books
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         public IQueryable<Product> GetProducts([QueryString("id")] int? categoryId)
@@ -26,6 +26,22 @@ namespace E_shop_books
                 query = query.Where(p => p.CategoryID == categoryId);
             }
             return query;
+        }
+
+        private void Page_Error(object sender, EventArgs e)
+        {
+            // Get last error from the server.
+            Exception exc = Server.GetLastError();
+
+            // Handle specific exception.
+            if (exc is InvalidOperationException)
+            {
+                // Pass the error on to the error page.
+                Server.Transfer("ErrorPage.aspx?handler=Page_Error%20-%20Default.aspx",
+                    true);
+            }
+
+
         }
     }
 }
