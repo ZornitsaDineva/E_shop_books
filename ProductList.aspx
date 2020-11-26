@@ -29,26 +29,26 @@
                         <table>
                             <tr>
                                 <td>
-                                    <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
+                                    <a href="<%#: GetRouteUrl("ProductByNameRoute", new {productName = Item.ProductName}) %>">
                                         <img src="/Catalog/Images/<%#:Item.ImagePath%>"
                                             width="100" height="75" style="border: solid" /></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
-                                        <span>
+                                    <a href="<%#: GetRouteUrl("ProductByNameRoute", new {productName = Item.ProductName}) %>">
+                                        
                                             <%#:Item.ProductName%>
-                                        </span>
+                                        
                                     </a>
                                     <br />
                                     <span>
-                                        <b>Цена: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
+                                        <b>Price: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
                                     </span>
                                     <br />
                                     <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %>">               
                                         <span class="ProductListItem">
-                                            <b>Добави в кошницата<b>
+                                            <b>Add To Cart<b>
                                         </span>           
                                     </a>
                                 </td>
