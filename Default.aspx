@@ -17,7 +17,7 @@
             <p>
                 You are invited to view or upload your videos to the Community collection. These thousands of videos were contributed by Archive users and community members. These videos are available for free download.
             <p>
-                <a class="btn btn-default" href="https://archive.org/details/opensource_movies">Learn more &raquo;</a>
+                <a class="btn btn-info" href="https://archive.org/details/opensource_movies">Learn more &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -26,7 +26,7 @@
                 These books are books contributed by the community.
             </p>
             <p>
-                <a class="btn btn-default" href="https://archive.org/details/opensource">Learn more &raquo;</a>
+                <a class="btn btn-info" href="https://archive.org/details/opensource">Learn more &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -35,7 +35,7 @@
                 You are invited to view or upload audios to the Community collection. These thousands of recordings were all contributed by Archive users and community members.
             </p>
             <p>
-                <a class="btn btn-default" href="https://archive.org/details/opensource_audio">Learn more &raquo;</a>
+                <a class="btn btn-info" href="https://archive.org/details/opensource_audio">Learn more &raquo;</a>
             </p>
         </div>
     </div>

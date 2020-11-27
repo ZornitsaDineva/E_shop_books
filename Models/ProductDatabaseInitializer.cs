@@ -20,22 +20,22 @@ namespace E_shop_books.Models
                 new Category
                 {
                     CategoryID = 1,
-                    CategoryName = "Информатика"
+                    CategoryName = "Art"
                 },
                 new Category
                 {
                     CategoryID = 2,
-                    CategoryName = "Макро икономика"
+                    CategoryName = "Science"
                 },
                 new Category
                 {
                     CategoryID = 3,
-                    CategoryName = "Микро икономика"
+                    CategoryName = "Cooking"
                 },
                 new Category
                 {
                     CategoryID = 4,
-                    CategoryName = "Екология"
+                    CategoryName = "Religion"
                 },
                
             };
@@ -49,8 +49,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 1,
-                    ProductName = "Програмиране",
-                    Description = "Програмирането е наука, която се занимава с методите и средствата за създаване на компютърни програми.",
+                    ProductName = "Painting art",
+                    Description = "Painting is the practice of applying paint, pigment, color or other medium to a solid surface (called the 'matrix' or 'support').[1] The medium is commonly applied to the base with a brush, but other implements, such as knives, sponges, and airbrushes, can be used.",
                     ImagePath="image1.jpg",
                     UnitPrice = 22.50,
                     CategoryID = 1
@@ -58,8 +58,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 2,
-                    ProductName = "Емоционална интелегентност",
-                    Description = "Под емоционална интелигентност се разбира способността или умението да се възприемат, оценяват и управляват собствените емоции, да се разграничават различните емоции и да се назовават и определят правилно, както и да се използва емоционалната информация, за да бъдат ръководени чрез това мисленето и поведението .",
+                    ProductName = "Opera and ballet",
+                    Description = "Ballet is a type of performance dance that originated in the Italian Renaissance courts of the 15th century and later developed into a concert dance",
                     ImagePath="image2.jpg",
                     UnitPrice = 15.95,
                      CategoryID = 1
@@ -67,8 +67,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 3,
-                    ProductName = "Фондови пазари",
-                    Description = "Фондов пазар или капиталов пазар за търгуване на капитали или деривативи на споразумяна цена, това са финансови инструменти на списък на фондовата борса, както и онези, които са търгувани само частно.",
+                    ProductName = "Information Technology",
+                    Description = "Information technology (IT) is the use of computers to store, retrieve, transmit, and manipulate data or information. IT is typically used within the context of business operations as opposed to personal or entertainment technologies.",
                     ImagePath="image3.jpg",
                     UnitPrice = 32.99,
                     CategoryID = 2
@@ -76,8 +76,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 4,
-                    ProductName = "Производителност на труда",
-                    Description = "Производителността на труда е икономически показател за количеството стоки или услуги, създавани от единица труд.",
+                    ProductName = "Mediterranean cuisine",
+                    Description = "Mediterranean cuisine is the foods and methods of preparation by people of the Mediterranean Basin",
                     ImagePath="image4.jpg",
                     UnitPrice = 8.95,
                     CategoryID = 3
@@ -85,8 +85,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 5,
-                    ProductName = "Връзки с обществеността",
-                    Description = "Връзки с обществеността е дейност по управление на информацията, свързана с публичния имидж на известни, публични личности, организации и програми.",
+                    ProductName = "Balkan cuisine",
+                    Description = "Balkan cuisine is a type of Mediterranean cuisine combining European with some Oriental characteristics",
                                  
                     ImagePath="image5.jpg",
                     UnitPrice = 34.95,
@@ -95,17 +95,17 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 6,
-                    ProductName = "Опазване на околната среда",
-                    Description = "Опазването на околната среда е човешка дейност за поддържане на устойчиво равновесие в биосферата.",
+                    ProductName = "Natural science",
+                    Description = "Natural science is concerned with the description, prediction, and understanding of natural phenomena based on empirical evidence from observation and experimentation.",
                     ImagePath="image6.jpg",
                     UnitPrice = 95.00,
-                    CategoryID = 4
+                    CategoryID = 2
                 },
                 new Product
                 {
                     ProductID = 7,
-                    ProductName = "Разработка на софтуер",
-                    Description = "Разработката на софтуер е разработването на софтуерен продукт съобразен с нуждите на дадена целева група или маркетинга на един софтуерен продукт.",
+                    ProductName = "Fashion and design",
+                    Description = "Fashion design is the art of applying design, aesthetics and natural beauty to clothing and its accessories.",
                     ImagePath="image7.jpg",
                     UnitPrice = 4.95,
                     CategoryID = 1
@@ -113,8 +113,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 8,
-                    ProductName = "Уеб дизайн",
-                    Description = "Уеб дизайнът включва много и различни умения и дисциплини в производството и поддръжката на уебсайтове.",
+                    ProductName = "Architecture",
+                    Description = "Architecture (Latin architectura, from the Greek ἀρχιτέκτων arkhitekton 'architect', from ἀρχι- 'chief' and τέκτων 'creator') is both the process and the product of planning, designing, and constructing buildings or other structures.",
                     ImagePath="image8.jpg",
                     UnitPrice = 2.95,
                     CategoryID = 1
@@ -122,8 +122,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 9,
-                    ProductName = "Потребление",
-                    Description = "Потреблението е действието и резултата от ползването на дадена стока или услуга.",
+                    ProductName = "Social science",
+                    Description = "Social science is concerned with society and the relationships among individuals within a society. ",
                     ImagePath="image9.jpg",
                     UnitPrice = 32.95,
                     CategoryID = 2
@@ -131,8 +131,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 10,
-                    ProductName = "Парична политика",
-                    Description = "Паричната политика, наричана още монетарна политика, е упражняването на контрол върху количеството пари в икономиката и е едно от основните средства за макроикономическо регулиране.",
+                    ProductName = "Formal science",
+                    Description = "Formal science is involved in the study of formal systems. It includes mathematics, systems theory, and theoretical computer science.",
                     ImagePath="image10.jpg",
                     UnitPrice = 15.00,
                     CategoryID = 2
@@ -140,8 +140,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 11,
-                    ProductName = "Икономика на труда",
-                    Description = "Икономика на труда изследва заплащанията, наемането и динамика на трудовите пазари.",
+                    ProductName = "European cuisine",
+                    Description = "European or western cuisine is the cuisines of Europe and other Western countries, including the cuisines brought to other countries by European settlers",
                     ImagePath="image11.jpg",
                     UnitPrice = 26.00,
                     CategoryID = 3
@@ -149,8 +149,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 12,
-                    ProductName = "Приложна екология",
-                    Description = "Приложната екология се занимава с прилагането на екологичните знания на практика, за справяне с екологичните проблеми.",
+                    ProductName = "Beliefs",
+                    Description = "Traditionally, faith, in addition to reason, has been considered a source of religious beliefs.",
                     ImagePath="image12.jpg",
                     UnitPrice = 29.00,
                     CategoryID = 4
@@ -158,8 +158,8 @@ namespace E_shop_books.Models
                 new Product
                 {
                     ProductID = 13,
-                    ProductName = "Социална екология",
-                    Description = "Социалната екология е основен раздел на екологията, както и подраздел на екоикономиката.",
+                    ProductName = "Culture",
+                    Description = "Culture and religion have usually been seen as closely related.",
                     ImagePath="image13.jpg",
                     UnitPrice = 95.00,
                     CategoryID = 4

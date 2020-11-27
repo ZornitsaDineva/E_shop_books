@@ -12,7 +12,7 @@
                 <EmptyDataTemplate>
                     <table >
                         <tr>
-                            <td>Няма данни.</td>
+                            <td>No data.</td>
                         </tr>
                     </table>
                 </EmptyDataTemplate>

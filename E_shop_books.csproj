@@ -172,6 +172,9 @@
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="Catalog\Images\image10.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Checkout\CheckoutCancel.aspx" />
     <Content Include="Checkout\CheckoutComplete.aspx" />
     <Content Include="Checkout\CheckoutError.aspx" />
@@ -453,6 +456,11 @@
     <Compile Include="Logic\PayPalFunctions.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Logic\ShoppingCartActions.cs" />
+    <Compile Include="Migrations\202011181413017_InitialCreate.cs" />
+    <Compile Include="Migrations\202011181413017_InitialCreate.Designer.cs">
+      <DependentUpon>202011181413017_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Order.cs" />
@@ -522,7 +530,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Catalog\Images\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -534,6 +541,11 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202011181413017_InitialCreate.resx">
+      <DependentUpon>202011181413017_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

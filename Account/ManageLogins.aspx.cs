@@ -32,8 +32,8 @@ namespace E_shop_books.Account
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             CanRemoveExternalLogins = manager.GetLogins(User.Identity.GetUserId()).Count() > 1;
 
-            SuccessMessage = String.Empty;
-            successMessage.Visible = !String.IsNullOrEmpty(SuccessMessage);
+            SuccessMessage = string.Empty;
+            successMessage.Visible = !string.IsNullOrEmpty(SuccessMessage);
         }
 
         public IEnumerable<UserLoginInfo> GetLogins()
