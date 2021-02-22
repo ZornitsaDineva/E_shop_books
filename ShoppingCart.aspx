@@ -22,7 +22,15 @@
                 <ItemTemplate>
                     <asp:CheckBox id="Remove" runat="server"></asp:CheckBox>
                 </ItemTemplate>        
-        </asp:TemplateField>    
+        </asp:TemplateField>  
+
+        <asp:TemplateField HeaderText="UpdateSum">            
+                <ItemTemplate>
+                    <asp:Button ID="UpdateBtn" runat="server" Text="Update" OnClick="UpdateBtn_Click" />
+                </ItemTemplate>        
+        </asp:TemplateField> 
+            
+                                      
         </Columns>    
     </asp:GridView>
     <div>
@@ -32,12 +40,14 @@
             <asp:Label ID="lblTotal" runat="server" EnableViewState="false"></asp:Label>
         </strong> 
     </div>
-    <br />
+    <br/>
     <table> 
     <tr>
       <td>
-        <asp:Button ID="UpdateBtn" runat="server" Text="Update" OnClick="UpdateBtn_Click" />
+      
       </td>
+     </tr>
+     <tr>
       <td>
         <asp:ImageButton ID="CheckoutImageBtn" runat="server" 
                       ImageUrl="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" 
